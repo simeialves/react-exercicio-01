@@ -1,0 +1,37 @@
+.cabecalho {
+    width: 90%;
+    border: 1px solid;
+    margin: 0 auto;
+    padding: 32px 16px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+        "logo . . menus"
+        "logo . . pesquisa";
+}
+
+.logo {
+    border: 1px solid;
+    padding: 30px;
+    font-size: 30px;
+    grid-area: logo;
+}
+
+.menus {
+    grid-area: menus;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.pesquisa {
+    grid-area: pesquisa;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.pesquisa input{
+    height: 30px;
+}

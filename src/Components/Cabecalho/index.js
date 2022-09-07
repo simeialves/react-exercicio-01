@@ -1,7 +1,9 @@
+import './style.css'
+
 export function Cabecalho() {
     return (
         <>
-            <div className="container">
+            {/* <div className="container">
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,7 +39,25 @@ export function Cabecalho() {
                         </form>
                     </div>
                 </nav>
+            </div> */}
+            <div className='cabecalho'>
+                <div className='logo'>Logo</div>
+                <div className='menus'>
+                    <h5>Topic 1</h5>
+                    <h5>Topic 2</h5>
+                    <h5>Topic 3</h5>
+                    <h5>Topic 4</h5>
+                </div>
+                <div className='pesquisa'>
+                    <input type="search" placeholder="Search"/> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                </div>
             </div>
+
         </>
     )
 }
+
+export default Cabecalho;

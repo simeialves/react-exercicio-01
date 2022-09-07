@@ -1,0 +1,9 @@
+.principal {
+    display: grid;
+    grid-template-columns: 70% 30%;
+
+}
+
+.artigo {
+    margin-left: 50px;
+}

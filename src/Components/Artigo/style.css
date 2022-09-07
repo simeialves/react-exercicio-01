@@ -1,0 +1,43 @@
+.principal {
+    background: white;
+}
+
+.artigos {
+    margin-left: 50px;
+    width: 900px;
+    grid-area: artigos;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "artigo1"
+        "artigo2"
+        "artigo3";
+}
+
+.artigo1 {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 25% 75%;
+}
+
+.artigo2 {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 25% 75%;
+}
+
+.artigo3 {
+    display: grid;
+    height: 250px;
+    grid-template-columns: 25% 75%;
+}
+
+.conteudo {
+    padding: 15px;
+    width: auto 0;
+    border: solid 1px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 70px;
+}
